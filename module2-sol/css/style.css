@@ -56,6 +56,7 @@ body{
         flex: 400px;
         background: pink;
         margin: 2.5px;
+        margin-top: 5px;
         border: 5px black solid;
     }
     #div-body {
@@ -77,6 +78,7 @@ body{
         flex: 400px;
         background: pink;
         margin: 2.5px;
+        margin-top: 5px;
         border: 5px black solid;
     }
     #div-body {
