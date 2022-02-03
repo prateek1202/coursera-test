@@ -24,18 +24,18 @@ body{
     padding: 5px;
     box-sizing: content-box;
 }
-
+.items{
+    width: 100%;
+}
 /*Large screen devices like desktop*/
 @media (min-width:992px) {
-    .items {
-        display:flex;
-        flex-wrap: wrap;
-    }
-    .items > div {
-        flex: 400px;
+    #div1,#div2,#div3 {
+        float: left;
+        width: calc(100%/3 - 20px);
+        margin: 5px;
         background: pink;
-        margin: 2.5px;
-        border: 5px black solid;
+        border: 5px solid black;
+        box-sizing: content-box;
     }
     #div-body {
         padding: 5px;
@@ -48,16 +48,19 @@ body{
 }
 /*Medium screen devices like tablet*/
 @media (min-width:769px) and (max-width:991px) {
-    .items {
-        display:flex;
-        flex-wrap: wrap;
-    }
-    .items > div {
-        flex: 400px;
+    #div1,#div2{
+        float: left;
+        width:calc(50% - 10px);
         background: pink;
-        margin: 2.5px;
+        margin: 5px;
+        border: 5px solid black;
+    }
+    #div3{
+        float: left;
+        width:100%;
+        background: pink;
+        border: 5px solid black;
         margin-top: 5px;
-        border: 5px black solid;
     }
     #div-body {
         padding: 5px;
@@ -70,16 +73,13 @@ body{
 }
 /*Small screen devices like phone*/
 @media (max-width: 768px ){
-    .items {
-        display:flex;
-        flex-wrap: wrap;
-    }
-    .items > div {
-        flex: 400px;
+    #div1,#div2,#div3 {
+        float: left;
+        width:100%;
         background: pink;
-        margin: 2.5px;
+        border: 5px solid black;
         margin-top: 5px;
-        border: 5px black solid;
+        margin-bottom: 5px;
     }
     #div-body {
         padding: 5px;
