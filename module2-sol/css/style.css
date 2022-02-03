@@ -1,0 +1,62 @@
+* {
+    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    box-sizing: border-box;
+}
+h1{
+    margin-top: 30px;
+    width: max-content;
+    margin-right: auto;
+    margin-left: auto;
+}
+#div-title {
+    font-size: large;
+    font-style: italic;
+    font-weight: bold;
+    border: 1px black solid ;
+    padding: 8px;
+    text-align: right;
+    box-sizing: content-box;
+}
+
+/*Large screen devices like desktop*/
+@media (min-width:992px) {
+    .items {
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .items div {
+        flex: 400px;
+        background: pink;
+        margin: 5px;
+        border: 2px darkgreen solid;
+    }
+}
+/*Medium screen devices like tablet*/
+@media (min-width:769px) and (max-width:991px) {
+    .items {
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .items div {
+        flex: 400px;
+        background: pink;
+        margin: 5px;
+        border: 2px darkgreen solid;
+    }
+
+}
+
+/*this is having some problem with it. will try to solve it later*/
+/*Small screen devices like phone*/
+@media (max-width: 768px ){
+    .items {
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .items div {
+        flex: 400px;
+        background: pink;
+        margin: 5px;
+        border: 2px darkgreen solid;
+    }
+}
