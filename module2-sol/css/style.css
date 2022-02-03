@@ -10,19 +10,20 @@ h1{
     margin-left: auto;
 }
 body{
-    background: #5D6D7E;
+    background: #8ecae6;
 }
 #div-title {
     float: right;
-    font-size: x-large;
+    font-size: 50px;
     font-style: italic;
     font-weight: bold;
     width: max-content;
     border-bottom: 3px black solid ;
     border-left: 3px black solid;
-    background-color:#F73B32;
+    background-color:#14213d;
     padding: 5px;
     box-sizing: content-box;
+    color: white;
 }
 .items{
     width: 100%;
@@ -32,14 +33,16 @@ body{
     #div1,#div2,#div3 {
         float: left;
         width: calc(100%/3 - 20px);
+        height: 500px;
         margin: 5px;
-        background: pink;
+        background: #fca311;
         border: 5px solid black;
         box-sizing: content-box;
     }
     #div-body {
         padding: 5px;
         padding-top: 0px;
+        font-size: 20px;
     }
     #div-body:first-letter{
         text-transform: capitalize;
@@ -51,14 +54,15 @@ body{
     #div1,#div2{
         float: left;
         width:calc(50% - 10px);
-        background: pink;
+        height: 300px;
+        background: #fca311;
         margin: 5px;
         border: 5px solid black;
     }
     #div3{
-        float: left;
+        float: left;    
         width:100%;
-        background: pink;
+        background: #fca311;
         border: 5px solid black;
         margin-top: 5px;
     }
@@ -69,6 +73,7 @@ body{
     #div-body:first-letter{
         text-transform: capitalize;
         font-size: 30px;
+        font-size: 15px;
     }
 }
 /*Small screen devices like phone*/
@@ -76,7 +81,7 @@ body{
     #div1,#div2,#div3 {
         float: left;
         width:100%;
-        background: pink;
+        background: #fca311;
         border: 5px solid black;
         margin-top: 5px;
         margin-bottom: 5px;
