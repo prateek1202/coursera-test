@@ -1,20 +1,26 @@
 * {
-    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-family: 'Supermercado One', cursive;
     box-sizing: border-box;
 }
 h1{
-    margin-top: 30px;
+    font-size: 40px;
     width: max-content;
     margin-right: auto;
     margin-left: auto;
 }
+body{
+    background: #5D6D7E;
+}
 #div-title {
-    font-size: large;
+    float: right;
+    font-size: x-large;
     font-style: italic;
     font-weight: bold;
-    border: 1px black solid ;
-    padding: 8px;
-    text-align: right;
+    width: max-content;
+    border-bottom: 3px black solid ;
+    border-left: 3px black solid;
+    background-color:#F73B32;
+    padding: 5px;
     box-sizing: content-box;
 }
 
@@ -24,11 +30,20 @@ h1{
         display:flex;
         flex-wrap: wrap;
     }
-    .items div {
-        flex: 400px;
+    .items > div {
+        flex: 30%;
         background: pink;
-        margin: 5px;
-        border: 2px darkgreen solid;
+        margin-left: 2.5px;
+        margin-right: 2.5px;
+        border: 5px black solid;
+    }
+    #div-body {
+        padding: 5px;
+        padding-top: 0px;
+    }
+    #div-body:first-letter{
+        text-transform: capitalize;
+        font-size: 30px;
     }
 }
 /*Medium screen devices like tablet*/
@@ -37,26 +52,39 @@ h1{
         display:flex;
         flex-wrap: wrap;
     }
-    .items div {
-        flex: 400px;
+    .items > div {
+        flex: 30%;
         background: pink;
-        margin: 5px;
-        border: 2px darkgreen solid;
+        margin-left: 2.5px;
+        margin-right: 2.5px;
+        border: 2px black solid;
     }
-
+    #div-body {
+        padding: 8px;
+    }
+    #div-body:first-letter{
+        text-transform: capitalize;
+        font-size: 30px;
+    }
 }
-
-/*this is having some problem with it. will try to solve it later*/
 /*Small screen devices like phone*/
 @media (max-width: 768px ){
     .items {
         display:flex;
         flex-wrap: wrap;
     }
-    .items div {
-        flex: 400px;
+    .items > div {
+        flex: 30%;
         background: pink;
-        margin: 5px;
-        border: 2px darkgreen solid;
+        margin-left: 2.5px;
+        margin-right: 2.5px;
+        border: 2px black solid;
+    }
+    #div-body {
+        padding: 8px;
+    }
+    #div-body:first-letter{
+        text-transform: capitalize;
+        font-size: 30px;
     }
 }
