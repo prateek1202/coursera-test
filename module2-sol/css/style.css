@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
 * {
-    font-family: 'Comic Neue';
+    font-family: 'Comic Neue', cursive;
     box-sizing: border-box;
 }
 h1{
@@ -33,8 +34,7 @@ body{
     .items > div {
         flex: 400px;
         background: pink;
-        margin-left: 2.5px;
-        margin-right: 2.5px;
+        margin: 2.5px;
         border: 5px black solid;
     }
     #div-body {
@@ -55,12 +55,12 @@ body{
     .items > div {
         flex: 400px;
         background: pink;
-        margin-left: 2.5px;
-        margin-right: 2.5px;
-        border: 2px black solid;
+        margin: 2.5px;
+        border: 5px black solid;
     }
     #div-body {
-        padding: 8px;
+        padding: 5px;
+        padding-top: 0px;
     }
     #div-body:first-letter{
         text-transform: capitalize;
@@ -76,12 +76,12 @@ body{
     .items > div {
         flex: 400px;
         background: pink;
-        margin-left: 2.5px;
-        margin-right: 2.5px;
-        border: 2px black solid;
+        margin: 2.5px;
+        border: 5px black solid;
     }
     #div-body {
-        padding: 8px;
+        padding: 5px;
+        padding-top: 0px;
     }
     #div-body:first-letter{
         text-transform: capitalize;
